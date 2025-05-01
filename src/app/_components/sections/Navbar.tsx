@@ -76,15 +76,15 @@ export default function Navbar() {
   };
 
   return (
-    <div className="w-full  py-6 fixed bg-white z-20">
-      <div className=" flex justify-between items-center mx-10">
+    <section className="w-full py-6  bg-white z-20 sticky">
+      <div className="flex justify-between items-center mx-10">
         <div className="flex-shrink-0">
           <Image src={logo} width={135} height={100} alt="logo" />
         </div>
 
         {/* Desktop Navigation Links */}
         <div className="hidden lg:flex w-full justify-center">
-          <ul className="flex gap-24 text-gray-800">
+          <ul className="flex   gap-24 text-gray-800">
             {navLinks.map((link, index) => (
               <motion.li
                 key={index}
@@ -107,7 +107,7 @@ export default function Navbar() {
                   ))}
                 </div>
 
-                <div className="flex overflow-hidden">
+                <div className="flex  overflow-hidden">
                   {Array.from(link).map((char: string, i: number) => (
                     <motion.span
                       key={`bottom-${i}`}
@@ -188,6 +188,6 @@ export default function Navbar() {
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 }
