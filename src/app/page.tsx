@@ -3,6 +3,9 @@ import Hero from "./_components/sections/Hero";
 import BrandSection from "./_components/sections/BrandSection";
 import WhoWeAre from "./_components/sections/WhoWeAre";
 import Services from "./_components/sections/Services";
+import Featured from "./_components/sections/Featured";
+import ReviewSection from "./_components/sections/ReviewSection";
+import PricingSection from "./_components/sections/PricingSection";
 
 export default function Home() {
   return (
@@ -12,6 +15,9 @@ export default function Home() {
       <BrandSection />
       <WhoWeAre />
       <Services />
+      <Featured />
+      <ReviewSection />
+      <PricingSection />
     </div>
   );
 }
