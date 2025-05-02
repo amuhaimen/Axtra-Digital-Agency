@@ -6,6 +6,7 @@ import Services from "./_components/sections/Services";
 import Featured from "./_components/sections/Featured";
 import ReviewSection from "./_components/sections/ReviewSection";
 import PricingSection from "./_components/sections/PricingSection";
+import BlogSection from "./_components/sections/BlogSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Featured />
       <ReviewSection />
       <PricingSection />
+      <BlogSection />
     </div>
   );
 }
