@@ -7,6 +7,7 @@ import Featured from "./_components/sections/Featured";
 import ReviewSection from "./_components/sections/ReviewSection";
 import PricingSection from "./_components/sections/PricingSection";
 import BlogSection from "./_components/sections/BlogSection";
+import WhyChooseUsIndex from "./_components/sections/chooseUs/WhyChooseUsIndex";
 
 export default function Home() {
   return (
@@ -18,8 +19,9 @@ export default function Home() {
       <Services />
       <Featured />
       <ReviewSection />
+      <WhyChooseUsIndex />
       <PricingSection />
-      <BlogSection />
+      {/* <BlogSection /> */}
     </div>
   );
 }

@@ -46,43 +46,42 @@ export default function ReviewSection() {
   ];
 
   return (
-    <section className="container my-40">
+    <section className="container my-20 lg:my-40 px-4">
       <AnimationWrapper>
-        <div className="relative">
-          {/* Top Images */}
-          <div className="flex justify-evenly">
-            <div className="relative w-[200px] h-[200px] hidden md:block">
+        <div className="relative w-full">
+          {/* Decorative Images (hidden on small screens) */}
+          <div className="hidden md:flex justify-evenly">
+            <div className="relative w-[200px] h-[200px]">
               <Image
                 src={upCommentImageLeft}
-                alt="Comments Image Left side"
+                alt="Comment image left"
                 fill
                 className="object-cover"
               />
             </div>
-            <div className="relative w-[100px] h-[100px] mt-20 hidden md:block">
+            <div className="relative w-[100px] h-[100px] mt-20">
               <Image
                 src={upCommentImageRight}
-                alt="Comments Image Right side"
+                alt="Comment image right"
                 fill
                 className="object-cover"
               />
             </div>
           </div>
 
-          {/* Middle Images */}
-          <div className="w-full absolute top-80 flex justify-between gap-8">
-            <div className="relative w-[100px] h-[100px] hidden md:block">
+          <div className="hidden md:flex absolute top-80 w-full justify-between gap-8">
+            <div className="relative w-[100px] h-[100px]">
               <Image
                 src={middleCommentImageLeft}
-                alt="Comments Image Left side"
+                alt="Middle left image"
                 fill
                 className="object-cover"
               />
             </div>
-            <div className="relative w-[200px] h-[200px] mt-14 hidden md:block">
+            <div className="relative w-[200px] h-[200px] mt-14">
               <Image
                 src={middleCommentImageRight}
-                alt="Comments Image Right side"
+                alt="Middle right image"
                 fill
                 className="object-cover"
               />
@@ -90,8 +89,8 @@ export default function ReviewSection() {
           </div>
 
           {/* Carousel Section */}
-          <div className="md:w-[580px] mx-auto">
-            <div className="text-center mx-auto">
+          <div className="w-full max-w-2xl mx-auto">
+            <div className="text-center">
               <DoubleQuotationUpIcon className="w-14 mx-auto mb-7 text-slate-800" />
             </div>
 
@@ -103,10 +102,10 @@ export default function ReviewSection() {
                       key={index}
                       className="flex-shrink-0 w-full text-center px-4"
                     >
-                      <p className="text-2xl leading-9 italic text-gray-800">
+                      <p className="text-lg sm:text-xl md:text-2xl leading-relaxed italic text-gray-800">
                         {comment.text}
                       </p>
-                      <h2 className="text-2xl font-medium uppercase mt-7 text-slate-800">
+                      <h2 className="text-xl md:text-2xl font-medium uppercase mt-7 text-slate-800">
                         {comment.author}
                       </h2>
                       <p className="uppercase text-xs mt-2 text-slate-500">
@@ -117,37 +116,38 @@ export default function ReviewSection() {
                 </div>
               </div>
 
-              <div className="flex justify-center gap-10 mt-10 md:w-[580px] w-full mx-auto z-10">
+              {/* Navigation Buttons - visible on all screen sizes */}
+              <div className="flex justify-center gap-6 mt-10">
                 <button
                   onClick={scrollPrev}
-                  className="bg-white rounded-full hover:bg-gray-950 transition border border-slate-800 text-slate-800 hover:text-slate-200 flex items-center justify-center w-14 h-14"
+                  className="bg-white rounded-full hover:bg-gray-950 transition border border-slate-800 text-slate-800 hover:text-white flex items-center justify-center w-12 h-12 md:w-14 md:h-14"
                 >
-                  <LeftArrowIcon className="w-8" />
+                  <LeftArrowIcon className="w-6 md:w-8" />
                 </button>
                 <button
                   onClick={scrollNext}
-                  className="bg-white rounded-full hover:bg-gray-950 transition border border-slate-800 text-slate-800 hover:text-slate-200 flex items-center justify-center w-14 h-14"
+                  className="bg-white rounded-full hover:bg-gray-950 transition border border-slate-800 text-slate-800 hover:text-white flex items-center justify-center w-12 h-12 md:w-14 md:h-14"
                 >
-                  <RightArrowIcon className="w-8" />
+                  <RightArrowIcon className="w-6 md:w-8" />
                 </button>
               </div>
             </div>
           </div>
 
-          {/* Bottom Images */}
-          <div className="flex justify-between -mt-56">
-            <div className="relative w-[200px] h-[384px] hidden md:block">
+          {/* Bottom Images (hidden on small screens) */}
+          <div className="hidden md:flex justify-between -mt-56">
+            <div className="relative w-[200px] h-[384px]">
               <Image
                 src={bottomCommentImageLeft}
-                alt="Comments Image Left side"
+                alt="Bottom image left"
                 fill
                 className="object-cover"
               />
             </div>
-            <div className="relative w-[150px] h-[150px] mt-10 z-10 mr-28 hidden md:block">
+            <div className="relative w-[150px] h-[150px] mt-10 z-10 mr-28">
               <Image
                 src={bottomCommentImageRight}
-                alt="Comments Image Right side"
+                alt="Bottom image right"
                 fill
                 className="object-cover"
               />
