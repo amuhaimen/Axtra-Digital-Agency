@@ -2,6 +2,7 @@ import { div } from "framer-motion/client";
 import Navbar from "./_components/sections/Navbar";
 import Hero from "./_components/sections/Hero";
 import BrandSection from "./_components/sections/BrandSection";
+import WhoWeAre from "./_components/sections/WhoWeAre";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <BrandSection />
+      <WhoWeAre />
     </div>
   );
 }
