@@ -68,7 +68,7 @@ export default function Hero() {
   const descriptionWords = description.split(",");
 
   return (
-    <section className=" bg-red-100    ">
+    <section className="">
       <div className=" container relative">
         {/* Header Section */}
         <div className="flex items-center w-40 gap-6 ml-4 lg:ml-10">
@@ -82,7 +82,7 @@ export default function Hero() {
           {Array.from(title).map((letter, index) => (
             <motion.h2
               key={`letter-${index}`}
-              className="inline-block uppercase font-semibold lg:text-[300px] text-7xl leading-none ml-4 lg:ml-10"
+              className="inline-block uppercase font-bold lg:text-[300px] text-7xl leading-none ml-4 lg:ml-10"
               initial="hidden"
               animate="visible"
               custom={index}
@@ -97,7 +97,7 @@ export default function Hero() {
           {Array.from(subtitle).map((letter, index) => (
             <motion.h2
               key={`letter-${index}`}
-              className=" inline-block uppercase font-semibold lg:text-[300px] text-7xl leading-none ml-4 lg:ml-10 tracking-tighter"
+              className=" inline-block uppercase font-bold lg:text-[300px] text-7xl leading-none ml-4 lg:ml-10 tracking-tighter"
               initial="hidden"
               animate="visible"
               custom={index}
