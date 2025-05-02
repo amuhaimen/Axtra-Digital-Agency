@@ -1,5 +1,4 @@
 import React from "react";
-import choose from "../../../../../public/axtra/coose-01.png";
 
 export default function ChooseUsReason() {
   return (

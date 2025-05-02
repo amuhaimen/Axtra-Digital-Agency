@@ -6,8 +6,9 @@ import Services from "./_components/sections/Services";
 import Featured from "./_components/sections/Featured";
 import ReviewSection from "./_components/sections/ReviewSection";
 import PricingSection from "./_components/sections/PricingSection";
-import BlogSection from "./_components/sections/BlogSection";
+// import BlogSection from "./_components/sections/BlogSection";
 import WhyChooseUsIndex from "./_components/sections/chooseUs/WhyChooseUsIndex";
+import Footer from "./_components/sections/Footer";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
       <ReviewSection />
       <WhyChooseUsIndex />
       <PricingSection />
-      {/* <BlogSection /> */}
+      <Footer />
     </div>
   );
 }

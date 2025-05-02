@@ -76,7 +76,7 @@ export default function Navbar() {
   };
 
   return (
-    <section className="w-full py-6  bg-white z-20 fixed">
+    <section className="w-full py-6  bg-white z-30 fixed">
       <div className="flex justify-between items-center mx-10">
         <div className="flex-shrink-0">
           <Image src={logo} width={135} height={100} alt="logo" />
