@@ -68,7 +68,7 @@ export default function Hero() {
   const descriptionWords = description.split(",");
 
   return (
-    <section className="">
+    <section className=" mt-24">
       <div className=" container relative">
         {/* Header Section */}
         <div className="flex items-center w-40 gap-6 ml-4 lg:ml-10">
@@ -93,7 +93,7 @@ export default function Hero() {
           ))}
         </div>
         {/* Hero subtitle */}
-        <div className="relative z-20 lg:left-72">
+        <div className="relative z-10 lg:left-72">
           {Array.from(subtitle).map((letter, index) => (
             <motion.h2
               key={`letter-${index}`}

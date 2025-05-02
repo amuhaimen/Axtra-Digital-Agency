@@ -76,7 +76,7 @@ export default function Navbar() {
   };
 
   return (
-    <section className="w-full py-6  bg-white z-20 sticky">
+    <section className="w-full py-6  bg-white z-20 fixed">
       <div className="flex justify-between items-center mx-10">
         <div className="flex-shrink-0">
           <Image src={logo} width={135} height={100} alt="logo" />
@@ -125,7 +125,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Icons (Search and Bar) */}
-        <div className="flex gap-10 items-center hidden lg:flex">
+        <div className="hidden lg:flex gap-10 items-center    ">
           <SearchIcon className="w-7" />
           <BarIcon className="w-5" />
         </div>
@@ -146,8 +146,8 @@ export default function Navbar() {
 
         {/* Mobile Navigation Links */}
         {isMenuOpen && (
-          <div className="lg:hidden absolute top-20 left-0 w-full h-full bg-gray-800 border-t-2 py-4 px-6 z-10">
-            <ul className="flex flex-col gap-4 text-slate-100 text-2xl">
+          <div className="lg:hidden fixed top-20 left-0 w-full h-screen bg-gray-800 border-t-2 py-4 px-6 z-50 overflow-y-auto">
+            <ul className="flex flex-col gap-4 text-slate-100 text-2xl mt-20">
               {navLinks.map((link, index) => (
                 <motion.li
                   key={index}
